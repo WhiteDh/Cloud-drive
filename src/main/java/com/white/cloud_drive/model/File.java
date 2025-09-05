@@ -26,6 +26,9 @@ public class File {
     @JoinColumn(name = "folder_id")
     private Folder folder;
 
+    @Column(name = "stored_name")
+    private String storedName;
+
     @ManyToOne
     @JoinColumn(name = "owner_id", nullable = false)
     private User owner;
